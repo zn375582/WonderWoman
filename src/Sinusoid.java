@@ -75,11 +75,11 @@ public class Sinusoid extends Shape
 			// TODO: calculate next x,y point
 			//y = yOffset + amplitude * sin(radians)
 			//x = xOffset + i * dx;
-			int xNext = location[1].x; // TODO:
-			int yNext = location[1].y;// TODO:
+			int xNext = location[1].x + i * dx; // TODO:
+			int yNext = location[1].y + (int)(amplitude * Math.sin(rad));// TODO:
 			
 			// TODO: create a point and store it into the locations list
-			
+			location[1] = new Point(xNext, yNext);
 		}
 	}
 
@@ -100,6 +100,10 @@ public class Sinusoid extends Shape
         int nPoints = location.length;
         
         // TODO: Draw a sequence of connected line segments to render a sinusoid
+        for (int index = 0; index < nPoints - 1; ++index)
+        {
+        	g2d.drawLine(location[index].x, location[index].y, location[index+1].x, location[index+1].y);
+        }
 
 	}
 
