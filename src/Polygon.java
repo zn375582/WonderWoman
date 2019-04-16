@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.Graphics;
 
 public abstract class Polygon extends Shape{
@@ -9,7 +10,7 @@ public abstract class Polygon extends Shape{
 	 */
 	public Polygon(Color color, boolean filled)
 	{
-		super();
+		super(color, filled);
 	}
 	
 	/**
@@ -21,11 +22,12 @@ public abstract class Polygon extends Shape{
 	 */
 	public void draw(Graphics graphics)
 	{
-		if (graphics.getFilled == true)
+		graphics.setColor(graphics.getColor());
+		graphics.drawPolygon(graphics);
+		
+		if (graphics.isFilled() == true)
 		{
-			graphics.setColor(graphics.getColor());
-			graphics.drawPolygon(graphics);
-			graphics.fillPolygon();
+			graphics.fillPolygon(graphics);
 		}
 	}
 }

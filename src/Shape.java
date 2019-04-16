@@ -1,10 +1,10 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Point;
 
-public abstract class Shape implement Drawable{
+public abstract class Shape implements Drawable{
 
-	/**
-	 * create private variables
-	 */
-	private Point[] location;
+	protected Point[] location;
 	private Color color;
 	private boolean filled;
 	
@@ -25,7 +25,7 @@ public abstract class Shape implement Drawable{
 	 */
 	public Color getColor()
 	{
-		return this.color;
+		return color;
 	}
 	
 	/**
@@ -34,7 +34,7 @@ public abstract class Shape implement Drawable{
 	 */
 	public boolean isFilled()
 	{
-		return this.filled;
+		return filled;
 	}
 	
 	/**
@@ -43,6 +43,6 @@ public abstract class Shape implement Drawable{
 	 */
 	public Point[] getLocation()
 	{
-		return this.location;
+		return location;
 	}
 }
