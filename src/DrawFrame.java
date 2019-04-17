@@ -1,5 +1,6 @@
 import java.awt.Color;
 import java.awt.Point;
+import java.io.IOException;
 
 import javax.swing.JFrame;
 
@@ -130,11 +131,12 @@ public class DrawFrame extends JFrame {
 	}
 
 	/**
-	 * The main method, initializes the frame to draw the images.
+	 * The main method, initializes the frame to draw the images. 
 	 */
-	public static void main(String[] args)
+	public static void main(String[] args) throws IOException
 	{
 		DrawFrame df = new DrawFrame("Wonder Woman!");
+		//PanelToImage.makePanelPNGImage(df, "WonderWoman");
 		
 		
 	}
