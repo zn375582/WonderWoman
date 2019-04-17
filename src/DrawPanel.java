@@ -3,6 +3,13 @@ import java.util.ArrayList;
 
 import javax.swing.JPanel;
 
+/**
+ * Class to add Shapes in DrawPanel
+ * 
+ * @author Nicole Zimmerer
+ * @version April 16, 2019
+ * Lab 10
+ */
 public class DrawPanel extends JPanel {
 
 	/**

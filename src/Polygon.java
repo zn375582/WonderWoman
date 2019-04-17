@@ -2,6 +2,13 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 
+/**
+ * Abstract Class to represent a Polygon
+ * 
+ * @author Nicole Zimmerer
+ * @version April 16, 2019
+ * Lab 10
+ */
 public abstract class Polygon extends Shape{
 
 	/**

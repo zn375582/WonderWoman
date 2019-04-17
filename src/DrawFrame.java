@@ -3,6 +3,13 @@ import java.awt.Point;
 
 import javax.swing.JFrame;
 
+/**
+ * Class to DrawFrame and create image/shape
+ * 
+ * @author Nicole Zimmerer
+ * @version April 16, 2019
+ * Lab 10
+ */
 public class DrawFrame extends JFrame {
 	
 	/**
@@ -18,6 +25,7 @@ public class DrawFrame extends JFrame {
 	 */
 	public DrawFrame(String title)
 	{
+		
 		
 		//Create panel and add shapes
 		drawPanel = new DrawPanel();
@@ -46,7 +54,7 @@ public class DrawFrame extends JFrame {
 		Shape rightFoot = new Diamond(new Point(186, 632), 11, Color.RED, true);
 		Shape bootLine = new PolyLine(new Point(181, 505), new Point(182, 505), 125, Color.WHITE, true);
 		Shape leftArm = new IsoscelesTriangle(new Point(125, 235), 18, -120, Color.ORANGE, true);
-		Shape rightArm = new IsoscelesTriangle(new Point(224, 235), 18, -120, Color.ORANGE, true);
+		Triangle rightArm = new IsoscelesTriangle(new Point(224, 235), 18, -120, Color.ORANGE, true);
 		Shape leftGauntlet = new IsoscelesTriangle(new Point(130, 330), 8, -25, Color.LIGHT_GRAY, true);
 		Shape leftHand = new Circle(new Point(129, 350), 10, Color.ORANGE, true);
 		Shape leftFiller = new Square(new Point(127, 365), 10, Color.WHITE, true);

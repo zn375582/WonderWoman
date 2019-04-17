@@ -1,6 +1,15 @@
 import java.awt.Color;
 import java.awt.Point;
 
+import org.junit.Assert;
+
+/**
+ * Class to create Rectangles
+ * 
+ * @author Nicole Zimmerer
+ * @version April 16, 2019
+ * Lab 10
+ */
 public class Rectangle extends Polygon{
 
 	
@@ -21,5 +30,5 @@ public class Rectangle extends Polygon{
 		location[2] = new Point(pointUL.x + width, pointUL.y + height);
 		location[3] = new Point(pointUL.x, pointUL.y + height);
 		
-	}
+	}		
 }

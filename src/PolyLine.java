@@ -1,6 +1,13 @@
 import java.awt.Color;
 import java.awt.Point;
 
+/**
+ * Class to create PolyLines
+ * 
+ * @author Nicole Zimmerer
+ * @version April 16, 2019
+ * Lab 10
+ */
 public class PolyLine extends Polygon{
 
 	/**

@@ -10,8 +10,8 @@ import java.awt.Point;
  * Class to represent and define how a sinusoid is drawn
  * 
  * @author MoSho
- * @author _______________
- * @version April 11, 2019
+ * @author Nicole Zimmerer
+ * @version April 16, 2019
  */
 public class Sinusoid extends Shape 
 {

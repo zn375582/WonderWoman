@@ -6,29 +6,23 @@ OU EMAIL____________: nicolelzimmerer@ou.edu
 
 Tasks:
 1. Finish todos in Sinusoid
-2. Shape and ShapeTest
-3. DrawPanel and DrawPanelTest
-4. DrawFrame and DrawFrameTest
-5. Polygon and PolygonTest
-6. Rectangle and RectangleTest
-7. Square and SquareTest
-8. RightTriangle and RightTriangleTest
-9. IsosclelesTriangle and IsocelesTriangleTest
-10. Oval 
-11. Circle Test
-12. Triangle test
+2. Create and Finish all non implemented Classes
+3. Create and Finish JUnit tests for all shapes
+4. Create image
 
 
 
 Estimated Time (minutes):
-1. 
-
+1. 40
+2. 60
+3. 100
+4. 120
 
 
 Actual Time (minutes):
-1. 
-
-
-
+1. 60
+2. 120
+3. 120
+4. 180
 
 */}

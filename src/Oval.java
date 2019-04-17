@@ -3,6 +3,13 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
 
+/**
+ * Class to create Oval
+ * 
+ * @author Nicole Zimmerer
+ * @version April 16, 2019
+ * Lab 10
+ */
 public class Oval extends Shape{
 
 	/**
