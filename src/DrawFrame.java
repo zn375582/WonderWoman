@@ -30,6 +30,7 @@ public class DrawFrame extends JFrame {
 		
 		//Create panel and add shapes
 		drawPanel = new DrawPanel();
+		drawPanel.setBackground(Color.WHITE);
 		Shape wave = new Sinusoid(Color.CYAN, new Point(375,650), 100, 2, 20);
 		Shape wave2 = new Sinusoid(Color.CYAN, new Point(375,600), 100, 2, 20);
 		Shape wave3 = new Sinusoid(Color.CYAN, new Point(375, 550), 100, 2, 20);
@@ -71,8 +72,10 @@ public class DrawFrame extends JFrame {
 		Shape rightPupil = new Oval(new Point(199, 138), 2, 4, Color.BLUE, true);
 		Shape mouth = new IsoscelesTriangle(new Point(179, 168), 10, -5, Color.RED, true);
 		Shape sun = new Circle(new Point(640, 10), 150, Color.YELLOW, true);
+		Shape background = new Rectangle (new Point(0, 0), 800, 700, Color.WHITE, true);
 		
 		//addShapes
+		drawPanel.addShape(background);
 		drawPanel.addShape(wave);
 		drawPanel.addShape(wave2);
 		drawPanel.addShape(wave3);
@@ -121,7 +124,6 @@ public class DrawFrame extends JFrame {
 		
 		//Create frame
 		JFrame frame = new JFrame(title);
-		
 		frame.setBackground(Color.WHITE);
 		frame.add(drawPanel);
 		frame.setSize(800, 700);
@@ -136,7 +138,7 @@ public class DrawFrame extends JFrame {
 	public static void main(String[] args) throws IOException
 	{
 		DrawFrame df = new DrawFrame("Wonder Woman!");
-		//PanelToImage.makePanelPNGImage(df, "WonderWoman");
+		PanelToImage.makePanelPNGImage(drawPanel, "WonderWoman");
 		
 		
 	}
