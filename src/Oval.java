@@ -1,5 +1,6 @@
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Point;
 
 public class Oval extends Shape{
@@ -21,8 +22,9 @@ public class Oval extends Shape{
 	public Oval(Point pointUL, int d1, int d2, Color color, boolean filled)
 	{
 		super(color, filled);
-		d1 = diameter1;
-		d2 = diameter2;
+		diameter1 = d1;
+		diameter2 = d2;
+		location = new Point[1];
 		location[0] = pointUL;
 	}
 	
@@ -52,12 +54,14 @@ public class Oval extends Shape{
 	 */
 	public void draw(Graphics graphics)
 	{
-		graphics.setColor(graphics.getColor());
-		graphics.drawOval(pointUL.x, PointUL.y, diameter1, diameter2);
+		Graphics2D g = (Graphics2D)graphics;
 		
-		if (graphics.getFilled() == true)
+		g.setColor(this.getColor());
+		g.drawOval(location[0].x, location[0].y, diameter1, diameter2);
+		
+		if (this.isFilled() == true)
 		{
-			graphics.fillOval(location[0].x, location[0].y, diameter1, diameter2);
+			g.fillOval(location[0].x, location[0].y, diameter1, diameter2);
 		}
 	}
 	
